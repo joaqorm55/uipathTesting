@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="913,1604" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ubac="clr-namespace:UiPath.BAF.Activities.ContextModel;assembly=UiPath.SuccessFactors.Activities" xmlns:ubme="clr-namespace:UiPath.BAF.Models.Entity;assembly=UiPath.SuccessFactors" xmlns:ubp="clr-namespace:UiPath.BAF.Properties;assembly=UiPath.SuccessFactors" xmlns:ubt="clr-namespace:UiPath.BAF.Telemetry;assembly=UiPath.SuccessFactors" xmlns:ucmc="clr-namespace:UiPath.CodeGen.Models.Connection;assembly=UiPath.SuccessFactors" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UiPath.SuccessFactors.Activities;assembly=UiPath.SuccessFactors.Activities" xmlns:usm="clr-namespace:UiPath.SuccessFactors.Models;assembly=UiPath.SuccessFactors" xmlns:usm1="clr-namespace:UiPath.Swagger.Models;assembly=UiPath.SuccessFactors" xmlns:uss="clr-namespace:UiPath.SuccessFactors.Services;assembly=UiPath.SuccessFactors" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,1604" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ubac="clr-namespace:UiPath.BAF.Activities.ContextModel;assembly=UiPath.SuccessFactors.Activities" xmlns:ubme="clr-namespace:UiPath.BAF.Models.Entity;assembly=UiPath.SuccessFactors" xmlns:ubp="clr-namespace:UiPath.BAF.Properties;assembly=UiPath.SuccessFactors" xmlns:ubt="clr-namespace:UiPath.BAF.Telemetry;assembly=UiPath.SuccessFactors" xmlns:ucmc="clr-namespace:UiPath.CodeGen.Models.Connection;assembly=UiPath.SuccessFactors" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UiPath.SuccessFactors.Activities;assembly=UiPath.SuccessFactors.Activities" xmlns:usm="clr-namespace:UiPath.SuccessFactors.Models;assembly=UiPath.SuccessFactors" xmlns:usm1="clr-namespace:UiPath.Swagger.Models;assembly=UiPath.SuccessFactors" xmlns:uss="clr-namespace:UiPath.SuccessFactors.Services;assembly=UiPath.SuccessFactors" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="106">
       <x:String>System.Activities</x:String>
@@ -105,7 +105,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="602,1539" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="603.2,1545.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="SAPSuccessFactorsBaseURL" />
       <Variable x:TypeArguments="x:String" Name="SAPSuccessFactorsUsername" />
@@ -118,7 +118,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetRobotCredential AssetName="C_IS_ED_SAPSuccessFactorsCredentials" CacheStrategy="None" DisplayName="Get SAPSuccessFactors Credential" FolderPath="IntegrationService" sap:VirtualizedContainerService.HintSize="540,52" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[SAPSuccessFactorsPassword]" Username="[SAPSuccessFactorsUsername]">
+    <ui:GetRobotCredential AssetName="C_IS_ED_SAPSuccessFactorsCredentials" CacheStrategy="None" DisplayName="Get SAPSuccessFactors Credential" FolderPath="IntegrationService" sap:VirtualizedContainerService.HintSize="540.8,52.8" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[SAPSuccessFactorsPassword]" Username="[SAPSuccessFactorsUsername]">
       <ui:GetRobotCredential.TimeoutMS>
         <InArgument x:TypeArguments="x:Int32" />
       </ui:GetRobotCredential.TimeoutMS>
@@ -129,7 +129,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotCredential>
-    <ui:GetRobotAsset AssetName="IS_ED_SAPSuccessFactorsBaseURL" CacheStrategy="None" DisplayName="Get SAPSuccessFactors BaseURL Asset" FolderPath="IntegrationService" sap:VirtualizedContainerService.HintSize="540,52" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+    <ui:GetRobotAsset AssetName="IS_ED_SAPSuccessFactorsBaseURL" CacheStrategy="None" DisplayName="Get SAPSuccessFactors BaseURL Asset" FolderPath="IntegrationService" sap:VirtualizedContainerService.HintSize="540.8,52.8" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
       <ui:GetRobotAsset.TimeoutMS>
         <InArgument x:TypeArguments="x:Int32" />
       </ui:GetRobotAsset.TimeoutMS>
@@ -143,13 +143,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotAsset>
-    <usa:SuccessFactorsScopeActivity Connection="{x:Null}" ExistingConnection="{x:Null}" DesignConnectionEnabled="True" DisplayName="SuccessFactors - Extract Data" ExistingConnectionType="usm:SuccessFactorsConnection" sap:VirtualizedContainerService.HintSize="540,1123" sap2010:WorkflowViewState.IdRef="SuccessFactorsScopeActivity_1" RefreshCacheEnabled="True" SelectedAuthType="Basic Auth" SelectedDesignAuthType="Basic Auth" TelemetryEnabled="False" ThrowExceptionOnError="False">
+    <usa:SuccessFactorsScopeActivity Connection="{x:Null}" ExistingConnection="{x:Null}" DesignConnectionEnabled="True" DisplayName="SuccessFactors - Extract Data - Testing" ExistingConnectionType="usm:SuccessFactorsConnection" sap:VirtualizedContainerService.HintSize="540.8,1124.8" sap2010:WorkflowViewState.IdRef="SuccessFactorsScopeActivity_1" RefreshCacheEnabled="True" SelectedAuthType="Basic Auth" SelectedDesignAuthType="Basic Auth" TelemetryEnabled="False" ThrowExceptionOnError="False">
       <usa:SuccessFactorsScopeActivity.Body>
         <ActivityAction x:TypeArguments="ubac:ScopeActivityContext">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ubac:ScopeActivityContext" Name="ScopeActivityContext" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,1011" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="507.2,1013.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dt_jobApplicationResults" />
               <Variable x:TypeArguments="x:String" Name="Filter" />
@@ -160,8 +160,8 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:BuildDataTable DataTable="[dt_Employees]" DisplayName="Build Data Table Employees" sap:VirtualizedContainerService.HintSize="444,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;FirstName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;LastName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;EmailAddress&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;IsOnboarding&quot; msdata:Caption=&quot;&quot; type=&quot;xs:boolean&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-            <Assign DisplayName="Assign job id filter" sap:VirtualizedContainerService.HintSize="444,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <ui:BuildDataTable DataTable="[dt_Employees]" DisplayName="Build Data Table Employees" sap:VirtualizedContainerService.HintSize="444.8,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;FirstName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;LastName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;EmailAddress&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;IsOnboarding&quot; msdata:Caption=&quot;&quot; type=&quot;xs:boolean&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <Assign DisplayName="Assign job id filter" sap:VirtualizedContainerService.HintSize="444.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[Filter]</OutArgument>
               </Assign.To>
@@ -169,7 +169,7 @@
                 <InArgument x:TypeArguments="x:String">[String.Format("jobReqId eq '{0}'", "2700")]</InArgument>
               </Assign.Value>
             </Assign>
-            <usa:SuccessFactorsSearchRecordsActivity AdditionalFields="{x:Null}" ConfiguredBusinessEntity="{x:Null}" Status="{x:Null}" BusinessEntityName="JobApplication" Category="Recruiting (RCM)" CrudOperation="Search" DesignConnectionEnabled="True" DisplayName="Search Job Applications based on job id" HideCascadingDropdown="False" sap:VirtualizedContainerService.HintSize="444,65" sap2010:WorkflowViewState.IdRef="SuccessFactorsSearchRecordsActivity_1" Results="[dt_jobApplicationResults]" ScopeActivityType="usa:SuccessFactorsScopeActivity" Section="RCM - Job Application">
+            <usa:SuccessFactorsSearchRecordsActivity AdditionalFields="{x:Null}" ConfiguredBusinessEntity="{x:Null}" Status="{x:Null}" BusinessEntityName="JobApplication" Category="Recruiting (RCM)" CrudOperation="Search" DesignConnectionEnabled="True" DisplayName="Search Job Applications based on job id" HideCascadingDropdown="False" sap:VirtualizedContainerService.HintSize="444.8,64.8" sap2010:WorkflowViewState.IdRef="SuccessFactorsSearchRecordsActivity_1" Results="[dt_jobApplicationResults]" ScopeActivityType="usa:SuccessFactorsScopeActivity" Section="RCM - Job Application">
               <usa:SuccessFactorsSearchRecordsActivity.BusinessEntity>
                 <ubme:BusinessEntity AuthFields="{x:Null}" Connection="{x:Null}" Id="{x:Null}" Name="JobApplication">
                   <ubme:BusinessEntity.AllFields>
@@ -366,15 +366,15 @@
                 <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
               </usa:SuccessFactorsSearchRecordsActivity.TelemetryProperties>
             </usa:SuccessFactorsSearchRecordsActivity>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_jobApplicationResults]" DisplayName="For Each Job Application" sap:VirtualizedContainerService.HintSize="444,573" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_jobApplicationResults]" DisplayName="For Each Job Application" sap:VirtualizedContainerService.HintSize="444.8,575.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <If Condition="[row(&quot;appStatusSetItemId&quot;).ToString.Equals(appStatusId)]" DisplayName="If there are candidates with Onboarding status" sap:VirtualizedContainerService.HintSize="410,456" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If Condition="[row(&quot;appStatusSetItemId&quot;).ToString.Equals(appStatusId)]" DisplayName="If there are candidates with Onboarding status" sap:VirtualizedContainerService.HintSize="411.2,458.4" sap2010:WorkflowViewState.IdRef="If_2">
                     <If.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="376,274" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                      <Sequence sap:VirtualizedContainerService.HintSize="377.6,275.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -495,7 +495,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </usa:SuccessFactorsScopeActivity>
-    <Sequence DisplayName="Write Audit File" sap:VirtualizedContainerService.HintSize="540,81" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <Sequence DisplayName="Write Audit File" sap:VirtualizedContainerService.HintSize="540.8,83.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="pathExists" />
         <Variable x:TypeArguments="x:String" Name="File" />
@@ -506,9 +506,9 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:GetEnvironmentFolder DisplayName="Get Desktop Folder" FolderPath="[desktop]" sap:VirtualizedContainerService.HintSize="554,62" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_1" SpecialFolder="Desktop" />
-      <ui:PathExists Resource="{x:Null}" DisplayName="Check if Path Exists" Exists="[pathExists]" sap:VirtualizedContainerService.HintSize="554,90" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[desktop+&quot;\IntegrationService_Demo&quot;]" PathType="Folder" />
-      <If Condition="[pathExists]" DisplayName="If Path Exists" sap:VirtualizedContainerService.HintSize="554,1552" sap2010:WorkflowViewState.IdRef="If_3">
+      <ui:GetEnvironmentFolder DisplayName="Get Desktop Folder" FolderPath="[desktop]" sap:VirtualizedContainerService.HintSize="560,62.4" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_1" SpecialFolder="Desktop" />
+      <ui:PathExists Resource="{x:Null}" DisplayName="Check if Path Exists" Exists="[pathExists]" sap:VirtualizedContainerService.HintSize="560,90.4" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[desktop+&quot;\IntegrationService_Demo&quot;]" PathType="Folder" />
+      <If Condition="[pathExists]" DisplayName="If Path Exists" sap:VirtualizedContainerService.HintSize="560,1611.2" sap2010:WorkflowViewState.IdRef="If_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -516,14 +516,14 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="476,628" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence sap:VirtualizedContainerService.HintSize="526.4,653.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Create File Path" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign DisplayName="Create File Path" sap:VirtualizedContainerService.HintSize="483.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[File]</OutArgument>
               </Assign.To>
@@ -531,20 +531,20 @@
                 <InArgument x:TypeArguments="x:String">[desktop+"\IntegrationService_Demo\Employee-NewHiresOnboarding.xlsx"]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Write Audit File in Excel" sap:VirtualizedContainerService.HintSize="434,418" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[File]">
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Write Audit File in Excel" sap:VirtualizedContainerService.HintSize="483.2,442.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[File]">
               <ui:ExcelApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,308" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,332.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message-Writing Excel File" sap:VirtualizedContainerService.HintSize="358,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Writing Excel audit file&quot;]" />
-                    <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_Employees]" DisplayName="Write Table Employees" sap:VirtualizedContainerService.HintSize="358,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="A1" />
+                    <ui:LogMessage DisplayName="Log Message-Writing Excel File" sap:VirtualizedContainerService.HintSize="387.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Writing Excel audit file&quot;]" />
+                    <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_Employees]" DisplayName="Write Table Employees" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="A1" />
                   </Sequence>
                 </ActivityAction>
               </ui:ExcelApplicationScope.Body>
@@ -558,14 +558,14 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence sap:VirtualizedContainerService.HintSize="476,748" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence sap:VirtualizedContainerService.HintSize="526.4,774.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder-IS Demo" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[desktop+&quot;\IntegrationService_Demo&quot;]" />
-            <Assign DisplayName="Create File Path" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder-IS Demo" sap:VirtualizedContainerService.HintSize="483.2,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[desktop+&quot;\IntegrationService_Demo&quot;]" />
+            <Assign DisplayName="Create File Path" sap:VirtualizedContainerService.HintSize="483.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[File]</OutArgument>
               </Assign.To>
@@ -573,20 +573,20 @@
                 <InArgument x:TypeArguments="x:String">[desktop+"\IntegrationService_Demo\Employee-NewHiresOnboarding.xlsx"]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Write Audit File in Excel" sap:VirtualizedContainerService.HintSize="434,418" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[File]">
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Write Audit File in Excel" sap:VirtualizedContainerService.HintSize="483.2,442.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[File]">
               <ui:ExcelApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,308" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,332.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message-Writing Excel File" sap:VirtualizedContainerService.HintSize="358,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Writing Excel audit file&quot;]" />
-                    <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_Employees]" DisplayName="Write Table Employees" sap:VirtualizedContainerService.HintSize="358,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="Sheet1" StartingCell="A1" />
+                    <ui:LogMessage DisplayName="Log Message-Writing Excel File" sap:VirtualizedContainerService.HintSize="387.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Writing Excel audit file&quot;]" />
+                    <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_Employees]" DisplayName="Write Table Employees" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="Sheet1" StartingCell="A1" />
                   </Sequence>
                 </ActivityAction>
               </ui:ExcelApplicationScope.Body>
