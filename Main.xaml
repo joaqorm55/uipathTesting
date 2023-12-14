@@ -1,0 +1,605 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="913,1604" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ubac="clr-namespace:UiPath.BAF.Activities.ContextModel;assembly=UiPath.SuccessFactors.Activities" xmlns:ubme="clr-namespace:UiPath.BAF.Models.Entity;assembly=UiPath.SuccessFactors" xmlns:ubp="clr-namespace:UiPath.BAF.Properties;assembly=UiPath.SuccessFactors" xmlns:ubt="clr-namespace:UiPath.BAF.Telemetry;assembly=UiPath.SuccessFactors" xmlns:ucmc="clr-namespace:UiPath.CodeGen.Models.Connection;assembly=UiPath.SuccessFactors" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usa="clr-namespace:UiPath.SuccessFactors.Activities;assembly=UiPath.SuccessFactors.Activities" xmlns:usm="clr-namespace:UiPath.SuccessFactors.Models;assembly=UiPath.SuccessFactors" xmlns:usm1="clr-namespace:UiPath.Swagger.Models;assembly=UiPath.SuccessFactors" xmlns:uss="clr-namespace:UiPath.SuccessFactors.Services;assembly=UiPath.SuccessFactors" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="106">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.BAF.Enums</x:String>
+      <x:String>UiPath.Swagger.Models</x:String>
+      <x:String>UiPath.CodeGen.Models.Connection</x:String>
+      <x:String>UiPath.SuccessFactors.Models</x:String>
+      <x:String>UiPath.BAF.Models.Connection</x:String>
+      <x:String>UiPath.BAF.Models.Connection.APIConnection</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.BAF.Telemetry</x:String>
+      <x:String>UiPath.BAF.Activities.ContextModel</x:String>
+      <x:String>UiPath.BAF.Models</x:String>
+      <x:String>UiPath.BAF.ServiceInterfaces</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.BAF.Models.Entity</x:String>
+      <x:String>UiPath.BAF.Properties</x:String>
+      <x:String>UiPath.BAF.Models.CrudOperation</x:String>
+      <x:String>UiPath.BAF.Models.Response</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.SuccessFactors.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.CodeGen.Activities</x:String>
+      <x:String>UiPath.BAF.Activities</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="82">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.SuccessFactors</AssemblyReference>
+      <AssemblyReference>UiPath.SuccessFactors.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="602,1539" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="SAPSuccessFactorsBaseURL" />
+      <Variable x:TypeArguments="x:String" Name="SAPSuccessFactorsUsername" />
+      <Variable x:TypeArguments="ss:SecureString" Name="SAPSuccessFactorsPassword" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Employees" />
+      <Variable x:TypeArguments="x:String" Name="Desktop" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetRobotCredential AssetName="C_IS_ED_SAPSuccessFactorsCredentials" CacheStrategy="None" DisplayName="Get SAPSuccessFactors Credential" FolderPath="IntegrationService" sap:VirtualizedContainerService.HintSize="540,52" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[SAPSuccessFactorsPassword]" Username="[SAPSuccessFactorsUsername]">
+      <ui:GetRobotCredential.TimeoutMS>
+        <InArgument x:TypeArguments="x:Int32" />
+      </ui:GetRobotCredential.TimeoutMS>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:GetRobotCredential>
+    <ui:GetRobotAsset AssetName="IS_ED_SAPSuccessFactorsBaseURL" CacheStrategy="None" DisplayName="Get SAPSuccessFactors BaseURL Asset" FolderPath="IntegrationService" sap:VirtualizedContainerService.HintSize="540,52" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+      <ui:GetRobotAsset.TimeoutMS>
+        <InArgument x:TypeArguments="x:Int32" />
+      </ui:GetRobotAsset.TimeoutMS>
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[SAPSuccessFactorsBaseURL]</OutArgument>
+      </ui:GetRobotAsset.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:GetRobotAsset>
+    <usa:SuccessFactorsScopeActivity Connection="{x:Null}" ExistingConnection="{x:Null}" DesignConnectionEnabled="True" DisplayName="SuccessFactors - Extract Data" ExistingConnectionType="usm:SuccessFactorsConnection" sap:VirtualizedContainerService.HintSize="540,1123" sap2010:WorkflowViewState.IdRef="SuccessFactorsScopeActivity_1" RefreshCacheEnabled="True" SelectedAuthType="Basic Auth" SelectedDesignAuthType="Basic Auth" TelemetryEnabled="False" ThrowExceptionOnError="False">
+      <usa:SuccessFactorsScopeActivity.Body>
+        <ActivityAction x:TypeArguments="ubac:ScopeActivityContext">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ubac:ScopeActivityContext" Name="ScopeActivityContext" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,1011" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_jobApplicationResults" />
+              <Variable x:TypeArguments="x:String" Name="Filter" />
+              <Variable x:TypeArguments="x:String" Default="16" Name="appStatusId" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:BuildDataTable DataTable="[dt_Employees]" DisplayName="Build Data Table Employees" sap:VirtualizedContainerService.HintSize="444,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;FirstName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;LastName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;EmailAddress&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;IsOnboarding&quot; msdata:Caption=&quot;&quot; type=&quot;xs:boolean&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <Assign DisplayName="Assign job id filter" sap:VirtualizedContainerService.HintSize="444,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Filter]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[String.Format("jobReqId eq '{0}'", "2700")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <usa:SuccessFactorsSearchRecordsActivity AdditionalFields="{x:Null}" ConfiguredBusinessEntity="{x:Null}" Status="{x:Null}" BusinessEntityName="JobApplication" Category="Recruiting (RCM)" CrudOperation="Search" DesignConnectionEnabled="True" DisplayName="Search Job Applications based on job id" HideCascadingDropdown="False" sap:VirtualizedContainerService.HintSize="444,65" sap2010:WorkflowViewState.IdRef="SuccessFactorsSearchRecordsActivity_1" Results="[dt_jobApplicationResults]" ScopeActivityType="usa:SuccessFactorsScopeActivity" Section="RCM - Job Application">
+              <usa:SuccessFactorsSearchRecordsActivity.BusinessEntity>
+                <ubme:BusinessEntity AuthFields="{x:Null}" Connection="{x:Null}" Id="{x:Null}" Name="JobApplication">
+                  <ubme:BusinessEntity.AllFields>
+                    <scg:List x:TypeArguments="ubme:EntityField" Capacity="8">
+                      <ubme:EntityField DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="The top number of items to return" FieldName="Top" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False">
+                        <ubme:EntityField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:Int32" x:Name="__ReferenceID1" />
+                        </ubme:EntityField.ArgumentValue>
+                      </ubme:EntityField>
+                      <ubme:EntityField DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="The number of items to skip" FieldName="Skip" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False">
+                        <ubme:EntityField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:Int32" x:Name="__ReferenceID2" />
+                        </ubme:EntityField.ArgumentValue>
+                      </ubme:EntityField>
+                      <ubme:EntityField DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="The query parameter" FieldName="Search" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False">
+                        <ubme:EntityField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:String" x:Name="__ReferenceID3" />
+                        </ubme:EntityField.ArgumentValue>
+                      </ubme:EntityField>
+                      <ubme:EntityField DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="The filter to use" FieldName="Filter" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False">
+                        <ubme:EntityField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:String" />
+                        </ubme:EntityField.ArgumentValue>
+                      </ubme:EntityField>
+                      <ubme:EntityField DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:Boolean" DataType="Boolean" Description="Whether to include count of items" FieldName="Count" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False">
+                        <ubme:EntityField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:Boolean" x:Name="__ReferenceID4" />
+                        </ubme:EntityField.ArgumentValue>
+                      </ubme:EntityField>
+                      <ubme:EntityField DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="s:String[]" DataType="String[]" Description="Order items by property values" FieldName="Orderby" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False">
+                        <ubme:EntityField.ArgumentValue>
+                          <InArgument x:TypeArguments="s:String[]" x:Name="__ReferenceID5" />
+                        </ubme:EntityField.ArgumentValue>
+                      </ubme:EntityField>
+                      <ubme:EntityField DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="s:String[]" DataType="String[]" Description="Select properties to be returned" FieldName="Select" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False">
+                        <ubme:EntityField.ArgumentValue>
+                          <InArgument x:TypeArguments="s:String[]" x:Name="__ReferenceID6" />
+                        </ubme:EntityField.ArgumentValue>
+                      </ubme:EntityField>
+                      <ubme:EntityField DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" ArgumentDirection="In" ArgumentType="s:String[]" DataType="String[]" Description="Expand related entities" FieldName="Expand" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False">
+                        <ubme:EntityField.ArgumentValue>
+                          <InArgument x:TypeArguments="s:String[]" x:Name="__ReferenceID7" />
+                        </ubme:EntityField.ArgumentValue>
+                      </ubme:EntityField>
+                    </scg:List>
+                  </ubme:BusinessEntity.AllFields>
+                  <ubme:BusinessEntity.EntityMetadata>
+                    <ubme:EntityMetadata Description="{x:Null}" Metadata="{x:Reference __ReferenceID0}" PrimaryFields="{x:Null}" EligibleOperations="-1" IsCustomEntity="False" Name="JobApplication" />
+                  </ubme:BusinessEntity.EntityMetadata>
+                  <ubme:BusinessEntity.Metadata>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID0">
+                      <x:String x:Key="Client">SuccessFactorsClient</x:String>
+                      <x:String x:Key="ClientRelativePath"></x:String>
+                      <x:String x:Key="Operation">JobApplication</x:String>
+                      <x:String x:Key="OperationCategory">EntitySet</x:String>
+                      <x:String x:Key="OperationAnnotation">SearchRecords</x:String>
+                      <x:String x:Key="OperationName">JobApplication</x:String>
+                      <x:String x:Key="UniqueOperationName">EntitySet.JobApplication</x:String>
+                    </scg:Dictionary>
+                  </ubme:BusinessEntity.Metadata>
+                  <ubme:BusinessEntity.SelectedFields>
+                    <scg:List x:TypeArguments="ubme:EntityField" Capacity="8">
+                      <ubme:EntityField ArgumentValue="{x:Reference __ReferenceID1}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID8" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="The top number of items to return" FieldName="Top" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False" />
+                      <ubme:EntityField ArgumentValue="{x:Reference __ReferenceID2}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID9" ArgumentDirection="In" ArgumentType="x:Int32" DataType="Int32" Description="The number of items to skip" FieldName="Skip" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False" />
+                      <ubme:EntityField ArgumentValue="{x:Reference __ReferenceID3}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID10" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="The query parameter" FieldName="Search" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False" />
+                      <ubme:EntityField DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID11" ArgumentDirection="In" ArgumentType="x:String" DataType="String" Description="The filter to use" FieldName="Filter" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False">
+                        <ubme:EntityField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:String">[filter]</InArgument>
+                        </ubme:EntityField.ArgumentValue>
+                      </ubme:EntityField>
+                      <ubme:EntityField ArgumentValue="{x:Reference __ReferenceID4}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID12" ArgumentDirection="In" ArgumentType="x:Boolean" DataType="Boolean" Description="Whether to include count of items" FieldName="Count" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False" />
+                      <ubme:EntityField ArgumentValue="{x:Reference __ReferenceID5}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID13" ArgumentDirection="In" ArgumentType="s:String[]" DataType="String[]" Description="Order items by property values" FieldName="Orderby" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False" />
+                      <ubme:EntityField ArgumentValue="{x:Reference __ReferenceID6}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID14" ArgumentDirection="In" ArgumentType="s:String[]" DataType="String[]" Description="Select properties to be returned" FieldName="Select" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False" />
+                      <ubme:EntityField ArgumentValue="{x:Reference __ReferenceID7}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID15" ArgumentDirection="In" ArgumentType="s:String[]" DataType="String[]" Description="Expand related entities" FieldName="Expand" FormDataType="ExpressionTextBox" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" SampleValue="" ShouldFilterOnChange="False" />
+                    </scg:List>
+                  </ubme:BusinessEntity.SelectedFields>
+                  <ubme:BusinessEntity.TelemetryProperties>
+                    <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+                  </ubme:BusinessEntity.TelemetryProperties>
+                </ubme:BusinessEntity>
+              </usa:SuccessFactorsSearchRecordsActivity.BusinessEntity>
+              <usa:SuccessFactorsSearchRecordsActivity.FieldsSelectionPageProperties>
+                <ubp:FieldsSelectionPageProperties DeletedFieldsMessage="Some fields ({0}) that were configured in the activity are no longer available in the selected entity. These fields have been removed." FilterMandatory="False" HasUniversalDirection="False" InvalidEntityMessage="Entity {0} does not exist anymore. Please re-configure the activity." PreviewResults="True" ShowAllFields="True" UniversalArgumentDirection="In">
+                  <ubp:FieldsSelectionPageProperties.AddMultipleFieldsButton>
+                    <ubp:ControlProperties DisplayName="{x:Null}" IconName="{x:Null}" ToolTip="{x:Null}" Watermark="{x:Null}" IsReadonly="False" Visibility="Collapsed" />
+                  </ubp:FieldsSelectionPageProperties.AddMultipleFieldsButton>
+                  <ubp:FieldsSelectionPageProperties.AddSingleFieldCombobox>
+                    <ubp:ControlProperties DisplayName="{x:Null}" IconName="{x:Null}" ToolTip="{x:Null}" Watermark="{x:Null}" IsReadonly="False" Visibility="Collapsed" />
+                  </ubp:FieldsSelectionPageProperties.AddSingleFieldCombobox>
+                  <ubp:FieldsSelectionPageProperties.CancelButton>
+                    <ubp:ControlProperties IconName="{x:Null}" ToolTip="{x:Null}" Watermark="{x:Null}" DisplayName="Cancel" IsReadonly="False" Visibility="Visible" />
+                  </ubp:FieldsSelectionPageProperties.CancelButton>
+                  <ubp:FieldsSelectionPageProperties.DoneButton>
+                    <ubp:ControlProperties IconName="{x:Null}" ToolTip="{x:Null}" Watermark="{x:Null}" DisplayName="Done" IsReadonly="False" Visibility="Visible" />
+                  </ubp:FieldsSelectionPageProperties.DoneButton>
+                  <ubp:FieldsSelectionPageProperties.FieldsSelectionControl>
+                    <ubp:FieldsSelectionControlProperties>
+                      <ubp:FieldsSelectionControlProperties.AllOperationsAutocompletebox>
+                        <ubp:ControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Search Operations" IsReadonly="False" ToolTip="Search Operations" Visibility="Visible" />
+                      </ubp:FieldsSelectionControlProperties.AllOperationsAutocompletebox>
+                      <ubp:FieldsSelectionControlProperties.CategoryDropdownLabel>
+                        <ubp:ControlProperties IconName="{x:Null}" ToolTip="{x:Null}" Watermark="{x:Null}" DisplayName="Category" IsReadonly="False" Visibility="Visible" />
+                      </ubp:FieldsSelectionControlProperties.CategoryDropdownLabel>
+                      <ubp:FieldsSelectionControlProperties.EntityListFieldCombobox>
+                        <ubp:ControlProperties DisplayName="{x:Null}" IconName="{x:Null}" Watermark="{x:Null}" IsReadonly="False" ToolTip="Select an object" Visibility="Visible" />
+                      </ubp:FieldsSelectionControlProperties.EntityListFieldCombobox>
+                      <ubp:FieldsSelectionControlProperties.EntityListFieldLabel>
+                        <ubp:ControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Select Object" IsReadonly="False" ToolTip="Select Object" Visibility="Visible" />
+                      </ubp:FieldsSelectionControlProperties.EntityListFieldLabel>
+                      <ubp:FieldsSelectionControlProperties.FiltersLabel>
+                        <ubp:ControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Filters :" IsReadonly="False" ToolTip="Select Object" Visibility="Visible" />
+                      </ubp:FieldsSelectionControlProperties.FiltersLabel>
+                      <ubp:FieldsSelectionControlProperties.OperationDropdownLabel>
+                        <ubp:ControlProperties IconName="{x:Null}" ToolTip="{x:Null}" Watermark="{x:Null}" DisplayName="Select Object" IsReadonly="False" Visibility="Visible" />
+                      </ubp:FieldsSelectionControlProperties.OperationDropdownLabel>
+                      <ubp:FieldsSelectionControlProperties.OptionalParameterSearchFieldLabel>
+                        <ubp:ControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Add Field" IsReadonly="False" ToolTip="Add Field" Visibility="Visible" />
+                      </ubp:FieldsSelectionControlProperties.OptionalParameterSearchFieldLabel>
+                      <ubp:FieldsSelectionControlProperties.OptionalParameterSearchFieldTextbox>
+                        <ubp:ControlProperties DisplayName="{x:Null}" IconName="{x:Null}" ToolTip="{x:Null}" IsReadonly="False" Visibility="Visible" Watermark="Search" />
+                      </ubp:FieldsSelectionControlProperties.OptionalParameterSearchFieldTextbox>
+                      <ubp:FieldsSelectionControlProperties.ScopeButton>
+                        <ubp:ControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Set Credentials" IsReadonly="False" ToolTip="Set the credentials of the scope" Visibility="Collapsed" />
+                      </ubp:FieldsSelectionControlProperties.ScopeButton>
+                      <ubp:FieldsSelectionControlProperties.ScopeButtonLabel>
+                        <ubp:ControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Activity Scope" IsReadonly="False" ToolTip="Activity Scope" Visibility="Collapsed" />
+                      </ubp:FieldsSelectionControlProperties.ScopeButtonLabel>
+                      <ubp:FieldsSelectionControlProperties.SectionDropdownLabel>
+                        <ubp:ControlProperties IconName="{x:Null}" ToolTip="{x:Null}" Watermark="{x:Null}" DisplayName="Section" IsReadonly="False" Visibility="Visible" />
+                      </ubp:FieldsSelectionControlProperties.SectionDropdownLabel>
+                    </ubp:FieldsSelectionControlProperties>
+                  </ubp:FieldsSelectionPageProperties.FieldsSelectionControl>
+                  <ubp:FieldsSelectionPageProperties.GridControl>
+                    <ubp:FieldsSelectionGridProperties>
+                      <ubp:FieldsSelectionGridProperties.ArgumentValue>
+                        <ubp:GridControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Value" IsReadonly="False" SecondPageWidth="0" ToolTip="Value to be used by robot when executing activity." Visibility="Visible" Width="141" />
+                      </ubp:FieldsSelectionGridProperties.ArgumentValue>
+                      <ubp:FieldsSelectionGridProperties.Checkbox>
+                        <ubp:ControlProperties DisplayName="{x:Null}" IconName="{x:Null}" Watermark="{x:Null}" IsReadonly="False" ToolTip="Select one or more fields to add." Visibility="Visible" />
+                      </ubp:FieldsSelectionGridProperties.Checkbox>
+                      <ubp:FieldsSelectionGridProperties.Datatype>
+                        <ubp:GridControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Data Type" IsReadonly="False" SecondPageWidth="87" ToolTip="Data Type of field." Visibility="Visible" Width="80" />
+                      </ubp:FieldsSelectionGridProperties.Datatype>
+                      <ubp:FieldsSelectionGridProperties.DeleteButton>
+                        <ubp:ControlProperties DisplayName="{x:Null}" IconName="{x:Null}" ToolTip="{x:Null}" Watermark="{x:Null}" IsReadonly="False" Visibility="Collapsed" />
+                      </ubp:FieldsSelectionGridProperties.DeleteButton>
+                      <ubp:FieldsSelectionGridProperties.Description>
+                        <ubp:GridControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Display Name" IsReadonly="False" SecondPageWidth="176" ToolTip="Display Name" Visibility="Visible" Width="130" />
+                      </ubp:FieldsSelectionGridProperties.Description>
+                      <ubp:FieldsSelectionGridProperties.Direction>
+                        <ubp:GridControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Direction" IsReadonly="False" SecondPageWidth="0" ToolTip="Direction" Visibility="Collapsed" Width="0" />
+                      </ubp:FieldsSelectionGridProperties.Direction>
+                      <ubp:FieldsSelectionGridProperties.EmptyDatagridMessage>
+                        <ubp:ControlProperties DisplayName="{x:Null}" IconName="{x:Null}" ToolTip="{x:Null}" IsReadonly="False" Visibility="Visible" Watermark="Select an entity to continue." />
+                      </ubp:FieldsSelectionGridProperties.EmptyDatagridMessage>
+                      <ubp:FieldsSelectionGridProperties.FieldFullName>
+                        <ubp:GridControlProperties IconName="{x:Null}" ToolTip="{x:Null}" Watermark="{x:Null}" DisplayName="Field (Full Name)" IsReadonly="False" SecondPageWidth="192" Visibility="Visible" Width="100" />
+                      </ubp:FieldsSelectionGridProperties.FieldFullName>
+                      <ubp:FieldsSelectionGridProperties.FieldName>
+                        <ubp:GridControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Field" IsReadonly="False" SecondPageWidth="192" ToolTip="Name of field." Visibility="Visible" Width="142" />
+                      </ubp:FieldsSelectionGridProperties.FieldName>
+                      <ubp:FieldsSelectionGridProperties.SampleDataRefreshButton>
+                        <ubp:ControlProperties DisplayName="{x:Null}" IconName="{x:Null}" Watermark="{x:Null}" IsReadonly="False" ToolTip="A sample record, if available, is retrieved by default.&#xA;&#xA;Type in a Sample Value for the Id and press enter or click here to retrieve sample values." Visibility="Visible" />
+                      </ubp:FieldsSelectionGridProperties.SampleDataRefreshButton>
+                      <ubp:FieldsSelectionGridProperties.SampleValue>
+                        <ubp:GridControlProperties IconName="{x:Null}" Watermark="{x:Null}" DisplayName="Sample Value" IsReadonly="False" SecondPageWidth="166" ToolTip="Sample Values to be used by Test with Sample Values. These values should be constants and should not be enclosed in quotes." Visibility="Visible" Width="134" />
+                      </ubp:FieldsSelectionGridProperties.SampleValue>
+                    </ubp:FieldsSelectionGridProperties>
+                  </ubp:FieldsSelectionPageProperties.GridControl>
+                  <ubp:FieldsSelectionPageProperties.TestButton>
+                    <ubp:ControlProperties DisplayName="{x:Null}" IconName="{x:Null}" ToolTip="{x:Null}" Watermark="{x:Null}" IsReadonly="False" Visibility="Visible" />
+                  </ubp:FieldsSelectionPageProperties.TestButton>
+                </ubp:FieldsSelectionPageProperties>
+              </usa:SuccessFactorsSearchRecordsActivity.FieldsSelectionPageProperties>
+              <usa:SuccessFactorsSearchRecordsActivity.PopulatedAPIParameters>
+                <scg:Dictionary x:TypeArguments="x:String, ubme:EntityField" />
+              </usa:SuccessFactorsSearchRecordsActivity.PopulatedAPIParameters>
+              <usa:SuccessFactorsSearchRecordsActivity.SelectedFields>
+                <scg:List x:TypeArguments="ubme:EntityField" Capacity="8">
+                  <x:Reference>__ReferenceID8</x:Reference>
+                  <x:Reference>__ReferenceID9</x:Reference>
+                  <x:Reference>__ReferenceID10</x:Reference>
+                  <x:Reference>__ReferenceID11</x:Reference>
+                  <x:Reference>__ReferenceID12</x:Reference>
+                  <x:Reference>__ReferenceID13</x:Reference>
+                  <x:Reference>__ReferenceID14</x:Reference>
+                  <x:Reference>__ReferenceID15</x:Reference>
+                </scg:List>
+              </usa:SuccessFactorsSearchRecordsActivity.SelectedFields>
+              <usa:SuccessFactorsSearchRecordsActivity.ServiceFactory>
+                <uss:SuccessFactorsServiceFactory />
+              </usa:SuccessFactorsSearchRecordsActivity.ServiceFactory>
+              <usa:SuccessFactorsSearchRecordsActivity.TelemetryProperties>
+                <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+              </usa:SuccessFactorsSearchRecordsActivity.TelemetryProperties>
+            </usa:SuccessFactorsSearchRecordsActivity>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_jobApplicationResults]" DisplayName="For Each Job Application" sap:VirtualizedContainerService.HintSize="444,573" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <If Condition="[row(&quot;appStatusSetItemId&quot;).ToString.Equals(appStatusId)]" DisplayName="If there are candidates with Onboarding status" sap:VirtualizedContainerService.HintSize="410,456" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,274" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object(){row(&quot;firstName&quot;).ToString,row(&quot;lastName&quot;).ToString,row(&quot;contactEmail&quot;).ToString,True}]" DataTable="[dt_Employees]" DisplayName="Add Data Row to dt_Employees" sap:VirtualizedContainerService.HintSize="334,186" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:AddDataRow>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <If Condition="[row(&quot;appStatusSetItemId&quot;).ToString.Equals(&quot;14&quot;)]" DisplayName="If there are candidates with other status (Ready for Hire for example)" sap:VirtualizedContainerService.HintSize="478,550" sap2010:WorkflowViewState.IdRef="If_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="400,274" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {row(&quot;firstName&quot;).ToString,row(&quot;lastName&quot;).ToString,row(&quot;contactEmail&quot;).ToString,False}]" DataTable="[dt_Employees]" DisplayName="Add Data Row to dt_Employees" sap:VirtualizedContainerService.HintSize="358,186" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:AddDataRow>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </If.Else>
+                  </If>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </usa:SuccessFactorsScopeActivity.Body>
+      <usa:SuccessFactorsScopeActivity.ConnectionParameters>
+        <scg:List x:TypeArguments="ucmc:ConnectionParam" Capacity="4">
+          <ucmc:ConnectionParam Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:String" Description="The base url for the connection." Mandatory="True" Name="Base Url">
+            <ucmc:ConnectionParam.ArgumentValue>
+              <InArgument x:TypeArguments="x:String">[SAPSuccessFactorsBaseURL]</InArgument>
+            </ucmc:ConnectionParam.ArgumentValue>
+          </ucmc:ConnectionParam>
+          <ucmc:ConnectionParam Value="{x:Null}" ArgumentDirection="In" ArgumentType="x:String" Description="Username of the login user." Mandatory="True" Name="Username">
+            <ucmc:ConnectionParam.ArgumentValue>
+              <InArgument x:TypeArguments="x:String">[SAPSuccessFactorsUsername]</InArgument>
+            </ucmc:ConnectionParam.ArgumentValue>
+          </ucmc:ConnectionParam>
+          <ucmc:ConnectionParam Value="{x:Null}" ArgumentDirection="In" ArgumentType="ss:SecureString" Description="Password of the user account." Mandatory="True" Name="Password">
+            <ucmc:ConnectionParam.ArgumentValue>
+              <InArgument x:TypeArguments="ss:SecureString">[SAPSuccessFactorsPassword]</InArgument>
+            </ucmc:ConnectionParam.ArgumentValue>
+          </ucmc:ConnectionParam>
+        </scg:List>
+      </usa:SuccessFactorsScopeActivity.ConnectionParameters>
+      <usa:SuccessFactorsScopeActivity.DesignConnectionParameters>
+        <scg:List x:TypeArguments="ucmc:ConnectionParam" Capacity="4">
+          <ucmc:ConnectionParam ArgumentValue="{x:Null}" ArgumentDirection="In" ArgumentType="x:String" Description="The base url for the connection." Mandatory="True" Name="Base Url" Value="https://apisalesdemo8.successfactors.com:443/odata/v2/" />
+          <ucmc:ConnectionParam ArgumentValue="{x:Null}" ArgumentDirection="In" ArgumentType="x:String" Description="Username of the login user." Mandatory="True" Name="Username" Value="sfadmin@SFCPART000159" />
+          <ucmc:ConnectionParam ArgumentValue="{x:Null}" ArgumentDirection="In" ArgumentType="ss:SecureString" Description="Password of the user account." Mandatory="True" Name="Password">
+            <ucmc:ConnectionParam.Value>
+              <ss:SecureString x:Name="__ReferenceID16" />
+            </ucmc:ConnectionParam.Value>
+          </ucmc:ConnectionParam>
+        </scg:List>
+      </usa:SuccessFactorsScopeActivity.DesignConnectionParameters>
+      <usa:SuccessFactorsScopeActivity.DesignConnectionRequest>
+        <usm:SuccessFactorsConnectionParameters APIKey="{x:Null}" BearerToken="{x:Null}" ClientId="{x:Null}" ClientSecret="{x:Null}" ConfigFileClient="{x:Null}" ConfigFilePath="{x:Null}" ExistingConnection="{x:Null}" JWTToken="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Reference __ReferenceID16}" PersonalAccessTokenName="{x:Null}" PersonalAccessTokenSecret="{x:Null}" Scopes="{x:Null}" SwaggerClient="{x:Reference __ReferenceID17}" AuthType="BasicAuth" BaseUrl="https://apisalesdemo8.successfactors.com:443/odata/v2/" Username="sfadmin@SFCPART000159" />
+      </usa:SuccessFactorsScopeActivity.DesignConnectionRequest>
+      <usa:SuccessFactorsScopeActivity.ServiceFactory>
+        <uss:SuccessFactorsServiceFactory />
+      </usa:SuccessFactorsScopeActivity.ServiceFactory>
+      <usa:SuccessFactorsScopeActivity.SupportedAuthTypes>
+        <scg:List x:TypeArguments="x:String" Capacity="4">
+          <x:String>Existing Connection</x:String>
+          <x:String>Basic Auth</x:String>
+          <x:String>API Key</x:String>
+        </scg:List>
+      </usa:SuccessFactorsScopeActivity.SupportedAuthTypes>
+      <usa:SuccessFactorsScopeActivity.SwaggerClient>
+        <usm1:SwaggerClient SwaggerMetadata="{x:Null}" x:Name="__ReferenceID17" ClientAssembly="UiPath.SuccessFactors" ClientNamespace="UiPath.SuccessFactors" />
+      </usa:SuccessFactorsScopeActivity.SwaggerClient>
+      <usa:SuccessFactorsScopeActivity.TelemetryProperties>
+        <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+      </usa:SuccessFactorsScopeActivity.TelemetryProperties>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </usa:SuccessFactorsScopeActivity>
+    <Sequence DisplayName="Write Audit File" sap:VirtualizedContainerService.HintSize="540,81" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="pathExists" />
+        <Variable x:TypeArguments="x:String" Name="File" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:GetEnvironmentFolder DisplayName="Get Desktop Folder" FolderPath="[desktop]" sap:VirtualizedContainerService.HintSize="554,62" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_1" SpecialFolder="Desktop" />
+      <ui:PathExists Resource="{x:Null}" DisplayName="Check if Path Exists" Exists="[pathExists]" sap:VirtualizedContainerService.HintSize="554,90" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[desktop+&quot;\IntegrationService_Demo&quot;]" PathType="Folder" />
+      <If Condition="[pathExists]" DisplayName="If Path Exists" sap:VirtualizedContainerService.HintSize="554,1552" sap2010:WorkflowViewState.IdRef="If_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="476,628" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="Create File Path" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[File]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[desktop+"\IntegrationService_Demo\Employee-NewHiresOnboarding.xlsx"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Write Audit File in Excel" sap:VirtualizedContainerService.HintSize="434,418" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[File]">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,308" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message-Writing Excel File" sap:VirtualizedContainerService.HintSize="358,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Writing Excel audit file&quot;]" />
+                    <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_Employees]" DisplayName="Write Table Employees" sap:VirtualizedContainerService.HintSize="358,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="A1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ExcelApplicationScope>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence sap:VirtualizedContainerService.HintSize="476,748" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder-IS Demo" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[desktop+&quot;\IntegrationService_Demo&quot;]" />
+            <Assign DisplayName="Create File Path" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[File]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[desktop+"\IntegrationService_Demo\Employee-NewHiresOnboarding.xlsx"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Write Audit File in Excel" sap:VirtualizedContainerService.HintSize="434,418" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[File]">
+              <ui:ExcelApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,308" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message-Writing Excel File" sap:VirtualizedContainerService.HintSize="358,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Writing Excel audit file&quot;]" />
+                    <ui:ExcelWriteRange AddHeaders="True" DataTable="[dt_Employees]" DisplayName="Write Table Employees" sap:VirtualizedContainerService.HintSize="358,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="Sheet1" StartingCell="A1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ExcelApplicationScope.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ExcelApplicationScope>
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+  </Sequence>
+</Activity>
